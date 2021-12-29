@@ -50,3 +50,24 @@ a, a:link {
     justify-content: center;
     column-gap: 1rem;
 }
+
+/* ================== hero style ==================== */
+#hero {
+    height: 395px;
+}
+.hero-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ================== icons style ==================== */
+#icons {
+    background: #d60c00;
+}
+.hot-nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#hnb {
+    display: flex;
+}
