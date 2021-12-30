@@ -104,3 +104,17 @@ a, a:link {
     border-radius: 50%;
     overflow: hidden;
 }
+
+/*=================== main > about style ============*/
+#slogan .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 200px;
+    background: url()
+}
+
+.text p {
+
+}
