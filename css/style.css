@@ -92,6 +92,33 @@ a, a:link {
     overflow: hidden; 
 }
 
+/* ------------------ main > about style ------------- */
+#slogan {
+    border-bottom: 1px solid #ccc;
+}
+#slogan .text {
+    display: flex;
+    justify-content: center; /* 수평정렬 : 가운데 */
+    align-items: center; /* 수직정렬 : 가운데 */
+    color: white;
+    height: 200px;
+    background: url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg") no-repeat center / cover; /* 반복안함, 가로-세로 중앙배치 / 사진은 알아서 늘려서 */
+}
+.text p {
+    text-shadow: 1px 1px 10px #000; /* 글자-그림자 : 10픽셀 검정색 */
+}
+.breadcrumb {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: right;
+    color: rgb(110, 110, 110);
+    font-size: .875em;
+}
+.breadcrumb a:hover {
+    color: #d60c00;
+}
+
 /* ================== aside style ==================== */
 .aside-wrap {
     border-top: 1px solid #d60c00;
