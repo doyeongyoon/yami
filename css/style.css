@@ -50,6 +50,30 @@ a, a:link {
     justify-content: center;
     column-gap: 1rem;
 }
+#gnb > li {
+    position: relative; /* body가 아닌 새로운 기준점 */
+}
+#gnb > li > a {
+    display: block;
+    padding: 20px 15px;
+}
+#gnb > li:hover .lnb {
+    display: block;
+}
+.lnb {
+    display: none;
+    position: absolute; /* 레이어처럼, 다른요소보다 위에 올라오는 */
+    background: #d60c00;
+    width: 100%;
+    color: white;
+}
+.lnb > li {
+    text-align: center;
+    padding: 15px 0;
+}
+.lnb > li:hover {
+    background: #800600
+}
 
 /* ================== hero style ==================== */
 #hero {
