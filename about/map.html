@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,41 +9,43 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="..css/style.css">
 </head>
+
 <body>
     <!-- p 374 HTML5 시맨틱 태그-->
     <h1 class="blind">스마일 푸드 야미</h1>
     <header>
         <div class="header-top">
             <div class="top-wrap">
-            <div class="logo">
-                <a href="#"><img src="../logo.gif" alt="야미"></a>
+                <div class="logo">
+                    <a href="#"><img src="../logo.gif" alt="야미"></a>
+                </div>
+                <nav class="top-nav">
+                    <ul id="tnb">
+                        <li><a href="#"></a>로그인</a></li>
+                        <li><a href="#"></a>회원가입</li>
+                        <li><a href="#"></a>장바구니</li>
+                        <li><a href="#"></a>마이페이지</li>
+                    </ul>
+                    </ul>
+                </nav>
             </div>
-            <nav class="top-nav">
-                <ul id="tnb">
-                    <li><a href="#"></a>로그인</a></li>
-                    <li><a href="#"></a>회원가입</li>
-                    <li><a href="#"></a>장바구니</li>
-                    <li><a href="#"></a>마이페이지</li></ul>
-                </ul>
-            </nav>
         </div>
-    </div>
-    <div class="header-bottom">
-        <div class="bottom-wrap">
-            <nav class="main-nav">
-                <ul id="gnb">
-                    <li><a href="#">야미소개</a></li>
-                    <li><a href="#">생산공정</a></li>
-                    <li><a href="#">제품소개</a></li>
-                    <li><a href="#">고객센터</a></li> 
-                </ul>
-            </nav>
+        <div class="header-bottom">
+            <div class="bottom-wrap">
+                <nav class="main-nav">
+                    <ul id="gnb">
+                        <li><a href="#">야미소개</a></li>
+                        <li><a href="#">생산공정</a></li>
+                        <li><a href="#">제품소개</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
     </header>
     <div id="hero">
         <div class="hero-wrap">
@@ -51,7 +54,8 @@
     </div>
     <div id="icons">
         <nav class="hot-nav">
-            <ul id="hnb"><!--hot navigation bar-->
+            <ul id="hnb">
+                <!--hot navigation bar-->
                 <li><a href="#"><img src="../visual_icon1.jpg" alt="기업소개"></a></li>
                 <li><a href="#"><img src="../visual_icon2.jpg" alt="사업안내"></a></li>
                 <li><a href="#"><img src="../visual_icon3.jpg" alt="제품정보"></a></li>
@@ -60,7 +64,8 @@
         </nav>
     </div>
     <section id="main">
-        <h2 class="blind">main section</main></h2>
+        <h2 class="blind">main section</main>
+        </h2>
         <article>
             <h3>product</h3>
             <ul class="prd">
@@ -78,5 +83,17 @@
         </ul>
     </aside>
     <footer></footer>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e15145016c0166f4260285d54e0fe566.">
+    </script>"
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(35.13200272748306, 126.91848098334674), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
 </body>
+
 </html>
