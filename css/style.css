@@ -52,17 +52,40 @@ a, a:link {
 }
 #gnb > li {
     position: relative; /* body가 아닌 새로운 기준점 */
+<<<<<<< HEAD
     background: gold;
+=======
+>>>>>>> 40a2918a3b2818c0ceba8b71bbe6b58d551d781d
 }
 #gnb > li > a {
     display: block;
     padding: 20px 15px;
 }
+<<<<<<< HEAD
 .lnb {
     position: absolute; /* 레이어처럼, 다른요소보다 위에 올라오는 */
     background: #d60c00;
     color: white;
 }
+=======
+#gnb > li:hover .lnb {
+    display: block;
+}
+.lnb {
+    display: none;
+    position: absolute; /* 레이어처럼, 다른요소보다 위에 올라오는 */
+    background: #d60c00;
+    width: 100%;
+    color: white;
+}
+.lnb > li {
+    text-align: center;
+    padding: 15px 0;
+}
+.lnb > li:hover {
+    background: #800600
+}
+>>>>>>> 40a2918a3b2818c0ceba8b71bbe6b58d551d781d
 
 /* ================== hero style ==================== */
 #hero {
