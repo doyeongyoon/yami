@@ -1,0 +1,302 @@
+body {
+    font-family: 'Lato', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+a, a:link {
+    text-decoration: none;
+    color: inherit;
+}
+.blind {
+    display: none;
+}
+
+/* =========================== header style ==============================*/
+.header-top {
+    border-bottom: 1px solid #d60c00;
+}
+.top-wrap {
+    max-width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;
+}
+#tnb {
+    display: flex;
+    column-gap: 1rem;
+}
+#tnb li {
+    font-size: 0.8125em;
+    color: #888;
+    font-weight: 500;
+}
+#tnb li:hover {
+    color: #000;
+}
+
+.bottom-wrap {
+    max-width: 900px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.main-nav {
+    width: 100%;
+}
+#gnb {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+#gnb > li {
+    position: relative; /* body가 아닌 새로운 기준점 */
+}
+#gnb > li > a {
+    display: block;
+    padding: 20px 15px;
+}
+#gnb > li:hover .lnb {
+    display: block;
+}
+.lnb {
+    display: none;
+    position: absolute; /* 레이어처럼, 다른요소보다 위에 올라오는 */
+    background: #d60c00;
+    width: 100%;
+    color: white;
+}
+.lnb > li {
+    text-align: center;
+    padding: 15px 0;
+}
+.lnb > li:hover {
+    background: #800600
+}
+
+/* ================== hero style ==================== */
+#hero {
+    height: 395px;
+}
+.hero-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ================== icons style ==================== */
+#icons {
+    background: #d60c00;
+}
+.hot-nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#hnb {
+    display: flex;
+}
+
+/* ================== main style ==================== */
+/* ------------- main > intro style ----------------- */
+.article-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#mind { /* container */
+    display: flex; /* .mind-cols가 2개인데, 이것의 부모 컨테이너 flex 정렬해 */
+    height: 220px;
+    overflow: hidden;
+    margin: 30px 0 0 0;
+}
+.mind-cols {
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.mind-img, .mind-col1, .mind-col2 {
+    width: 50%;
+}
+.mind-col1 {
+    background: #cc3129;
+    display: flex;
+    flex-direction: column; /* 주축 : row(가로) --> column(세로)로 변경 */
+    justify-content: center; /* 주축에서 정렬 속성 */
+}
+.mind-col1 hr {
+    width: 90%;
+    border: 0;
+    height: 1px; /* hr은 block 요소 */
+    background: white;
+}
+.mind-col2 {
+    background: rgb(94, 94, 94);
+    display: flex;
+    flex-direction: column; /* 주축 : row(가로) --> column(세로)로 변경 */
+    justify-content: center; /* 주축에서 정렬 속성 */
+}
+.mind-col2 hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid white;
+}
+.mind-cols p {
+    line-height: 1.5
+}
+.mind-cols .mind-img {
+    font-size: 0; /* 이미지는 인라인요소 --> 글자 크기에 따른 여백이 추가될 수 있음 */
+}
+.mind-img img {
+    max-width: 100%; /* 아무리 커도 부모 요소를 넘지 않도록 제한 */
+}
+/* ------------- main > history style ----------------- */
+.history {
+    display: flex;
+}
+.history ul {
+    width: 50%;
+}
+.history ul li { 
+    display: flex;
+    margin: 1rem 0;
+}
+.history ul li p:nth-child(1) {
+    margin-right: 1rem;
+    
+}
+/* ------------- main > partner style ----------------- */
+.brand {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ------------- main > business style ----------------- */
+.business {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+/* ------------------ main > map style ------------- */
+.tab-btns ul {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+.tab-btns ul li {
+    width: calc(33.33333333333333% - 20px);
+    background: #d60c00;
+    color: white;
+    text-align: center;
+}
+.tab-btns ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+#map {
+    height: 400px;
+    margin: 30px 0;
+}
+
+/*---------- main > process style-----------------*/
+.steps .step {
+    border: 3px solid gray;
+    width: 180px;
+    height: 180px;
+    box-sizing: border-box;    /* 상자의 크기에 border 포함시켜서 그리게 하는 속성*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem; 
+}
+.step .title {
+    color: yellowgreen;
+    text-transform: uppercase;
+}
+.title::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: yellowgreen;
+    margin: 10px auto 0;
+}
+
+#main > article > h3 {
+    margin: 50px 0;
+    text-align: center; /* 가로 정렬 */
+    font-size: 1.375em; /* 크기값 */
+    color: #d60c00; /* 색상값 */
+    font-weight: 600; /* 두께값 */
+    text-transform: uppercase; /* 대문자 */
+}
+.prd {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.prd li{
+    border-radius: 50%; /* 테두리 반경 : 50% (1:1 비율일때 정원으로 모양 깍기) */
+    overflow: hidden; 
+}
+
+/* ------------------ main > about style ------------- */
+#slogan {
+    border-bottom: 1px solid #ccc;
+}
+#slogan .text {
+    display: flex;
+    justify-content: center; /* 수평정렬 : 가운데 */
+    align-items: center; /* 수직정렬 : 가운데 */
+    color: white;
+    height: 200px;
+    background: url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg") no-repeat center / cover; /* 반복안함, 가로-세로 중앙배치 / 사진은 알아서 늘려서 */
+}
+.text p {
+    text-shadow: 1px 1px 10px #000; /* 글자-그림자 : 10픽셀 검정색 */
+}
+.breadcrumb {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: right;
+    color: rgb(110, 110, 110);
+    font-size: .875em;
+}
+.breadcrumb a:hover {
+    color: #d60c00;
+}
+
+/* ================== aside style ==================== */
+.aside-wrap {
+    border-top: 1px solid #d60c00;
+    background: #f1f1f1;
+    margin: 50px 0 20px;
+}
+.aside-wrap > ul {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+.aside-wrap li {
+    font-size: 14px;
+    color: #d60c00
+}
+/* ================== footer style ==================== */
+footer {
+    text-align: center;
+}
+footer .logo-footer {
+    margin: 20px 0;
+}
+footer p {
+    line-height: 1.8;
+    font-size: 12px;
+}
